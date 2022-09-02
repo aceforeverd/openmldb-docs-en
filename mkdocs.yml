@@ -1,0 +1,28 @@
+site_name: OpenMLDB docs
+plugins:
+  - search:
+
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: True
+  - sane_lists
+
+extra:
+  alternate:
+    - name: 中文
+      link: /zh/
+      lang: zh
+    - name: English
+      link: /en/
+      lang: en
+
+docs_dir: en
+
+theme:
+    name: material
+    logo: about/images/openmldb_logo.png
+    favicon: about/images/openmldb_favicon.png
+    features:
+      - navigation.top
+      - navigation.indexes

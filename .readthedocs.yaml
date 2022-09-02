@@ -9,13 +9,11 @@ version: 2
 build:
   os: ubuntu-20.04
   tools:
-    # this is required to make conda works
-    # ref https://github.com/readthedocs/readthedocs.org/issues/8595
-    python: mambaforge-4.10
+    python: '3.10'
 
-conda:
-  environment: environment.yml
+mkdocs:
+  configuration: mkdocs.yml
 
-# Build documentation in the docs/ directory with Sphinx
-sphinx:
-   configuration: en/conf.py
+python:
+   install:
+     - requirements: requirements.txt
