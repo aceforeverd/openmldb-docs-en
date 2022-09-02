@@ -1,6 +1,6 @@
 site_name: OpenMLDB docs
 plugins:
-  - search:
+  - search
 
 markdown_extensions:
   - smarty
@@ -11,10 +11,10 @@ markdown_extensions:
 extra:
   alternate:
     - name: 中文
-      link: /zh/
+      link: /zh/latest/
       lang: zh
     - name: English
-      link: /en/
+      link: /en/latest/
       lang: en
 
 docs_dir: en
